@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Diseño de la capa Vista 
+
 namespace Capa_Vista_MVC1
 {
     public partial class FrmPrincipal : Form
