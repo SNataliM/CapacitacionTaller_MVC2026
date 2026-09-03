@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Diseño de la capa MOdelo con la conexion a BD
 namespace Capa_Modelo_MVC1
 {
     internal class Conexion
