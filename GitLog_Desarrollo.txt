@@ -1,0 +1,6 @@
+* 6b26727 (HEAD -> main, origin/main, origin/HEAD, Desarrollo_control_de_usuario_final) Agregando el control de usuario ComboBox, ademas de organizar carpetas
+* a064dd3 Modificar archivo Git Log
+* 4b8fa9b Log
+* 3266445 Log del git
+* e855d34 (origin/Diseño_Capa_Controlador_0901-23-10017) Proyecto de Practica Ejecucion
+* 2f5abbd Proyecto de Practica Capacitacion MVC
