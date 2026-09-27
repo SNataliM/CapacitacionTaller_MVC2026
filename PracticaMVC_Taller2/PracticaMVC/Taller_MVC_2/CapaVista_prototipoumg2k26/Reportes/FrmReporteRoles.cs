@@ -25,12 +25,10 @@ namespace CapaVista_prototipoumg2k26.Reportes
         {
             try
             {
-                // Este nombre debe coincidir exactamente con el DataSet del archivo RDLC.
                 ReportDataSource reportDataSource = new ReportDataSource("DatosRoles", rol.GetAll());
 
                 reportViewer1.ProcessingMode = ProcessingMode.Local;
-                reportViewer1.LocalReport.ReportEmbeddedResource =
-                    "CapaVista_prototipoumg2k26.Reportes.ReporteRoles.rdlc";
+                reportViewer1.LocalReport.ReportEmbeddedResource = "CapaVista_prototipoumg2k26.Reportes.ReporteRoles.rdlc";
                 reportViewer1.LocalReport.DataSources.Clear();
                 reportViewer1.LocalReport.DataSources.Add(reportDataSource);
                 reportViewer1.RefreshReport();

@@ -16,13 +16,21 @@ namespace CapaVista_prototipoumg2k26.Formas
             InitializeComponent();
             panIngresoDatos.Enabled = false;
             ConfigurarVistaRoles();
-            ListaRoles();
-            CargarDatos();
         }
 
         private void FrmEmpleados_Load(object sender, EventArgs e)
         {
             ListaRoles();
+
+            try
+            {
+                CargarDatos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No fue posible cargar el combo de roles.\n\n" + ex.Message,
+                    "Base de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ConfigurarVistaRoles()
@@ -197,9 +205,14 @@ namespace CapaVista_prototipoumg2k26.Formas
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-           FrmReporteRoles reporte = new FrmReporteRoles();
-              reporte.Show();
+            FrmReporteRoles reporte = new FrmReporteRoles();
+            reporte.Show();
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/AyudaRisko/CapaRisko.chm", "Roles.html");
         }
     }
-    }
+}
 
