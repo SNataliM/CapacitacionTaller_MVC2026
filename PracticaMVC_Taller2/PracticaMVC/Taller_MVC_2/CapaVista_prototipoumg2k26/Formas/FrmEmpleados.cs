@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using CapaControlador_prototipoumg2k26;
+using CapaVista_prototipoumg2k26.Reportes;
 
 namespace CapaVista_prototipoumg2k26.Formas
 {
@@ -193,7 +194,12 @@ namespace CapaVista_prototipoumg2k26.Formas
         {
             comboI1.llenarCombo("tbl_roles", "id_rol", "nombre_rol");
         }
-        
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+           FrmReporteRoles reporte = new FrmReporteRoles();
+              reporte.Show();
         }
+    }
     }
 
